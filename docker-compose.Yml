@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    test-reverse-proxy:
+      build: .
+      ports:
+        - 2929:80
+      environment:
+        REMOTE_HOST: http://perdu.com/
